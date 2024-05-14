@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Search Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Log Search</h1>
+    <form id="search-form">
+        <label for="query">Search Query:</label><br>
+        <input type="text" id="query" name="query" placeholder="Enter your search term"><br>
+        <label for="filter">Filter By:</label><br>
+        <select id="filter-field" name="filter[field]">
+      <option value="">-- Select Filter --</option>
+      <option value="level">Level</option>
+      <option value="log_stringtimestamp">Timestamp</option>
+      <option value="metadata.source">Source</option>
+    </select>
+        <input type="text" id="filter-value" name="filter[value]" placeholder="Enter filter value">
+        <br><br>
+        <button type="submit">Search Logs</button>
+    </form>
+    <div id="search-results"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

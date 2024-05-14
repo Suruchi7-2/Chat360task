@@ -1,0 +1,12 @@
+{
+    "apis": {
+        "weather": {
+            "logLevel": "info",
+            "logFile": "weather.log"
+        },
+        "news": {
+            "logLevel": "info",
+            "logFile": "news.log"
+        }
+    }
+}
